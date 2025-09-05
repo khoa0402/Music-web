@@ -7,17 +7,17 @@ import cors from "cors";
 import fs from "fs";
 import cron from "node-cron";
 
-import { connectDB } from "./lib/db.js";
 import authRoutes from "./route/auth.route.js";
 import adminRoutes from "./route/admin.route.js";
 import songRoutes from "./route/song.route.js";
 import albumRoutes from "./route/album.route.js";
 import statusRoutes from "./route/status.route.js";
+import { connectDB } from "./lib/db.js";
 
 dotenv.config();
 
-const __dirname = path.resolve();
 const app = express();
+const __dirname = path.resolve();
 const PORT = process.env.PORT;
 
 app.use(
