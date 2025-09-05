@@ -22,6 +22,7 @@
     "express-fileupload": "^1.5.2",
     "express-list-endpoints": "^7.1.1",
     "mongoose": "^8.17.2",
+    "music-web": "file:..",
     "node-cron": "^4.2.1",
     "socket.io": "^4.8.1"
   },
